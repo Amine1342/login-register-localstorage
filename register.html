@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--  Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Inscription</title>
+  </head>
+
+  <body>
+    <div
+      class="container d-flex align-items-center justify-content-center vh-100"
+    >
+      <div class="col-md-6">
+        <h1 class="text-center mb-4 text-primary">Créer votre compte</h1>
+        <form>
+          <div class="form-group mb-3">
+            <!-- Nom et prénom-->
+            <label for="name">Nom</label>
+            <input
+              type="text"
+              name="name"
+              class="form-control is-invalid"
+              id="name"
+              placeholder="Saisissez votre nom ici"
+              required
+            />
+            <div class="invalid-feedback">Le nom est obligatoire</div>
+
+            <label for="name">Prénom</label>
+            <input
+              type="text"
+              name="prénom"
+              class="form-control is-invalid"
+              id="prénom"
+              placeholder="Saisissez votre prénom ici"
+              required
+            />
+            <div class="invalid-feedback">Le prénom est obligatoire</div>
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control is-invalid"
+              id="email"
+              placeholder="Saisissez votre adresse email ici"
+              required
+            />
+            <div class="invalid-feedback">L'adresse mail est invalide</div>
+
+            <!-- Mot de passe et confirmation-->
+            <label for="password">Mot de passe</label>
+            <input
+              type="password"
+              class="form-control is-invalid"
+              id="password"
+              placeholder="Saisissez votre mot de passe ici"
+              required
+            />
+            <div class="invalid-feedback">Le mot de passe est obligatoire</div>
+
+            <label for="password">Confirmation mot de passe</label>
+            <input
+              type="password"
+              class="form-control is-invalid"
+              id="password"
+              placeholder="Saisissez votre mot de passe de nouveau"
+              required
+            />
+            <div class="invalid-feedback">
+              La confirmation est obligatoire, sinon le mot de passe est
+              invalide
+            </div>
+          </div>
+
+          <!-- Bouton d'inscription -->
+          <input
+            type="submit"
+            value="S'inscrire"
+            id="submit"
+            href="dashboard.html"
+            class="btn btn-success w-100"
+            style="text-decoration: none; color: white"
+            onclick="register()"
+          />
+        </form>
+      </div>
+    </div>
+    <script src="JS/Register.js"></script>
+  </body>
+</html>
