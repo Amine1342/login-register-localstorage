@@ -38,6 +38,7 @@
               id="email"
               placeholder="Saisissez votre adresse email ici"
             />
+            <div class="invalid-feedback">L'adresse mail est invalide</div>
           </div>
           <div class="form-group mb-3">
             <label for="password">Mot de passe</label>
@@ -47,21 +48,33 @@
               id="password"
               placeholder="Saisissez votre mot de passe ici"
             />
+            <div class="invalid-feedback">Le mot de passe est obligatoire</div>
           </div>
-          <a
-            href="dashboard.html"
+
+          <button
+            type="submit"
+            id="submit"
             class="btn btn-success w-100"
             style="text-decoration: none; color: white"
-            >Connexion</a
           >
+            Connexion
+          </button>
         </form>
+
         <div class="text-center mt-3">
-          <a href="register.html">S'inscrire</a>
+          <button
+            type="submit"
+            id="register"
+            class="btn"
+            style="text-decoration: underline; color: blue"
+          >
+            S'inscrire
+          </button>
         </div>
       </div>
     </div>
 
     <!-- Javascript -->
-    <script src="JS/Javascript.js"></script>
+    <script src="JS/Login.js"></script>
   </body>
 </html>

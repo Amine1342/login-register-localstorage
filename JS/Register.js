@@ -62,4 +62,3 @@ function register(e) {
 }
 var btnregister = document.getElementById("submit")
 btnregister.addEventListener("click" , register)
-console.log('name ', nom.value);
