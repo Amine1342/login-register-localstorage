@@ -30,74 +30,65 @@
         <form>
           <div class="form-group mb-3">
             <!-- Nom et prénom-->
-            <label for="name">Nom</label>
+            <label for="name">Nom :</label>
             <input
               type="text"
-              name="name"
-              class="form-control is-invalid"
-              id="name"
+              class="form-control"
+              id="nom"
               placeholder="Saisissez votre nom ici"
-              required
             />
             <div class="invalid-feedback">Le nom est obligatoire</div>
 
-            <label for="name">Prénom</label>
+            <label for="name">Prénom :</label>
             <input
               type="text"
-              name="prénom"
-              class="form-control is-invalid"
+              class="form-control"
               id="prénom"
               placeholder="Saisissez votre prénom ici"
-              required
             />
             <div class="invalid-feedback">Le prénom est obligatoire</div>
 
             <!-- Email -->
-            <label for="email">Email</label>
+            <label for="email">Email :</label>
             <input
               type="email"
-              class="form-control is-invalid"
+              class="form-control"
               id="email"
               placeholder="Saisissez votre adresse email ici"
-              required
             />
-            <div class="invalid-feedback">L'adresse mail est invalide</div>
+            <div class="invalid-feedback">L'email est obligatoire</div>
 
             <!-- Mot de passe et confirmation-->
-            <label for="password">Mot de passe</label>
+            <label for="password">Mot de passe :</label>
             <input
               type="password"
-              class="form-control is-invalid"
+              class="form-control"
               id="password"
               placeholder="Saisissez votre mot de passe ici"
-              required
             />
             <div class="invalid-feedback">Le mot de passe est obligatoire</div>
 
-            <label for="password">Confirmation mot de passe</label>
+            <label for="password">Confirmation mot de passe :</label>
             <input
               type="password"
-              class="form-control is-invalid"
-              id="password"
+              class="form-control"
+              id="confirm"
               placeholder="Saisissez votre mot de passe de nouveau"
-              required
             />
             <div class="invalid-feedback">
-              La confirmation est obligatoire, sinon le mot de passe est
-              invalide
+              La confirmation est obligatoire, ou elle est invalide
             </div>
           </div>
 
           <!-- Bouton d'inscription -->
-          <input
+          <button
             type="submit"
-            value="S'inscrire"
             id="submit"
-            href="dashboard.html"
             class="btn btn-success w-100"
             style="text-decoration: none; color: white"
-            onclick="register()"
-          />
+          >
+            S'inscrire
+          </button>
         </form>
       </div>
     </div>
